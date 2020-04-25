@@ -1,0 +1,60 @@
+@import '../../assets/less/meta/mixins';
+@import '../../assets/less/meta/variables';
+
+.home-container{
+	height: 100%;
+}
+
+.home-container--main-banner{
+	height: 100%;
+	position: relative;
+	background-image: url("/images/dream.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.home-container--main-banner-overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.1;
+	background: @overlay-color;
+}
+
+.home-container--main-banner-content{
+	margin-top: -30px;
+	font-size: 18px;
+	text-align: center;
+	.center();
+}
+
+.home-container--main-banner-content-border{
+	margin-bottom: 25px;
+	padding: 8px 10px;
+	border: 3px solid @overlay-color;
+}
+
+.home-container--main-banner-title{
+	padding: 28px 60px;
+	background: rgba(255, 255, 255, 0.75);
+}
+
+.home-container--logo{
+	font-weight: 600;
+}
+
+.home-container--main-banner-button{
+	display: inline-block;
+	padding: 14px 60px 15px;
+	border: 1px solid @brand-color;
+	background: rgba(@brand-color, 1);
+	color: @overlay-color;
+	.transition();
+	&:hover{
+		background: rgba(@brand-color, 0.1);
+		color: @overlay-color;
+	}
+}

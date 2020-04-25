@@ -1,0 +1,30 @@
+{
+  "extends": ["tslint:latest"],
+	"rulesDirectory": [
+		"node_modules/tslint-eslint-rules/dist/rules"
+	],
+  "rules": {
+    "align": [false, "arguments", "elements", "members", "parameters", "statements"],
+		"no-constant-condition": true,
+    "quotemark": [true, "single", "jsx-double"],
+    "jsx-wrap-multiline": false,
+    "radix": false,
+    "semicolon": [true, "never"],
+    "trailing-comma": false,
+		"indent": [true, "spaces", 2],
+		"ordered-imports": false,
+		"arrow-parens": false,
+		"object-literal-sort-keys": false,
+		"no-implicit-dependencies": [true, "dev"],
+		"no-submodule-imports": false,
+		"member-access": false,
+		"one-line": [true, "check-catch", "check-finally", "check-else"],
+		"space-before-function-paren": [false, "never"],
+		"whitespace": [true, "check-module"],
+		"space-before-blocks": [true, "never"],
+    "no-angle-bracket-type-assertion": [false, "never"],
+		"no-string-literal": false,
+		"prefer-conditional-expression": false,
+    "object-literal-key-quotes": [false, "always"]
+  }
+}

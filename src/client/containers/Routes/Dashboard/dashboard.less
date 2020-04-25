@@ -1,0 +1,61 @@
+@import '../../../assets/less/meta/mixins';
+@import '../../../assets/less/meta/variables';
+
+.dashboard{
+  height: 100%;
+}
+
+.dashboard--header{
+  position: relative;
+  z-index: 50;
+  height: @dashboard-header-height;
+  background: @theme-color-secondary;
+  box-shadow: 0 0px 25px 3px rgba(0, 0, 0, 0.45);
+  .clearfix();
+}
+
+.dashboard--header-brand,
+.dashboard--header-content{
+  height: 100%;
+}
+
+.dashboard--header-brand{
+  width: @dashboard-panel-width;
+  border-right: 2px solid @border-color;
+  float: left;
+  h3{
+    padding-left: 25px;
+    line-height: @dashboard-header-height;
+    letter-spacing: 0.7px;
+    font-size: 20ox;
+    font-family: 'Roboto', 'Serif';
+    color: @overlay-color;
+  }
+}
+
+.dashboard--header-content{
+  width: ~"calc(100% - @{dashboard-panel-width})";
+  float: right;
+}
+
+.dashboard--container{
+  height: ~"calc(100% - @{dashboard-header-height})";
+  .clearfix();
+}
+
+.dashboard--container-panel{
+  width: @dashboard-panel-width;
+  height: 100%;
+  float: left;
+  border-right: 2px solid @border-color;
+  background: @theme-color-secondary;
+}
+
+.dashboard--container-content{
+  width: ~"calc(100% - @{dashboard-panel-width})";
+  height: 100%;
+  padding: 45px 25px 15px;
+  float: right;
+  overflow: auto;
+  background: #fcfcfc;
+}

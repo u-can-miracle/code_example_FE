@@ -1,0 +1,80 @@
+.header--content-wrapper{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-right: 14px;
+}
+.header--page-navigations{
+	display: inline-block;
+  height: 100%;
+}
+.header--navigation-item{
+	display: inline-block;
+	margin: 0 12px;
+  height: 100%;
+}
+.header--navigation-link {
+  display: inline-block;
+  margin-top: 17px;
+  height: 100%;
+	text-transform: uppercase;
+	letter-spacing: 1.45px;
+	color: @overlay-color;
+}
+.header--logged-nav{
+	display: flex;
+	float: right;
+  height: 100%;
+}
+.header--nav-link-wrapper{
+	margin-right: 10px;
+	padding-right: 10px;
+	color: @overlay-color;
+  .anticon{
+
+  }
+  .header--nav-title{
+
+  }
+}
+
+.header--nav-link{
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &:hover{
+    color: @overlay-color-secondary;
+  }
+}
+
+.header--nav-link-exit{
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 1px solid @overlay-color;
+}
+
+.header--attantion-icon{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  &.icon-info{
+    color: @info-color;
+  }
+  &.icon-warning{
+    color: @warning-color;
+  }
+}
+
+.link-white{
+	display: flex;
+	align-items: center;
+}
+
+.header--btn{
+	text-transform: capitalize;
+	color: @overlay-color;
+}

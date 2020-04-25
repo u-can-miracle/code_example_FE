@@ -1,0 +1,73 @@
+@import 'meta/variables';
+
+.brand{
+	color: @theme-color
+}
+
+.overlay-link{
+	color: @overlay-color;
+}
+
+.link-white{
+	border: none;
+	background: transparent;
+	color: @overlay-color;
+	&:hover{
+		color: @link-white-hover-color;
+	}
+}
+
+.navigation-link{
+	text-decoration: none;
+	color: @primary-text-color;
+}
+
+.navigation-link-overlay{
+	text-decoration: none;
+	color: @overlay-color;
+}
+
+.vertical-dash{
+	margin-left: 8px;
+	margin-right: 7px;
+	color: @overlay-color;
+}
+
+.theme-btn{
+	display: inline-block;
+	height: auto;
+	line-height: auto;
+	line-height: normal;
+	padding: 13px 30px 13px;
+	border: 1px solid @brand-color;
+	border-radius: 0;
+	font-size: 16px;
+	background: rgba(@brand-color, 1);
+	color: @overlay-color;
+	.transition();
+	&.btn-large{
+		padding: 14px 60px 15px;
+		font-size: 18px;
+	}
+	&.btn-hover-transparent:hover{
+		background: rgba(@brand-color, 0.1);
+		color: @overlay-color;
+	}
+	&:hover{
+		background: lighten(@brand-color, 25%);
+		color: @overlay-color;
+	}
+}
+
+.disabled-inputs-wrapper {
+  &, .ant-select-auto-complete.ant-select{
+    .ant-input[disabled] {
+      background-color: @overlay-color;
+    }
+  }
+}
+
+.search-box{
+  max-width: 500px;
+  margin-bottom: 30px;
+}
